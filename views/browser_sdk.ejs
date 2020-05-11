@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Webex Teams Integration (Browser SDK)</title>
+    <script src="javascripts/browser_sdk.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/oauth_client.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="glasspane">
+            <h1>Webex Teams Integration (Browser SDK)</h1>
+        </div>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <td>Client ID:</td>
+                    <td><input id="clientId" readonly value="<%= clientId %>"></td>
+                </tr>
+                <tr>
+                    <td>Redirect URI:</td>
+                    <td><input id="redirectUri" readonly value="<%= redirectUriBrowser %>"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <td>Authorize:</td>
+                    <td>
+                        <button id="loginButton" type="button" disabled>Login</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="loginMessage" readonly>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <td>User Data:</td>
+                    <td><button id="userButton" type="button" disabled>Get User Data</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="userNameData" readonly>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+        <div>
+            <a href="/"><button>Main menu</button></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

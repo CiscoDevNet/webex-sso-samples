@@ -1,0 +1,6 @@
+node_modules/
+server.key
+server.cert
+.env
+.vscode/settings.json
+public/javascripts/browser_sdk.js

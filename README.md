@@ -110,7 +110,7 @@ Included samples:
     node server.js
     ```
 
-1. In a browser, open [http://localhost:3000](http://localhost:3000) to access the app
+1. In a browser, open [https://localhost:3000](https://localhost:3000) to access the app
 
 ## Hints
 

@@ -33,6 +33,11 @@ const app = express();
 // Initialize Expression session storage with a unique secret
 app.use( session( { secret: uuidv4() } ) );
 
+// Redirect all HTTP requests to their HTTPS versions
+app.use( function( req, res ) {
+    if( !req.secure ) res.redirect( `'https://${ req.headers.host }${ request.url }` );
+} );
+
 // Implement Content Security Policy (CSP) directives supported by Widgets
 app.use( csp( {
     directives: {

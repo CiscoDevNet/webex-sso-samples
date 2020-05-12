@@ -43,7 +43,8 @@ app.use( csp( {
         imgSrc: [ `'self' code.s4d.io *.clouddrive.com data: blob: *.rackcdn.com` ],
         connectSrc: [ `'self' localhost wss://*.wbx2.com https://*.wbx2.com wss://*.wbx.com https://*.webex.com ` +
             'https://code.s4d.io https://*.code.s4d.io wss://*.ciscospark.com https://*.ciscospark.com ' +
-            'https://myspark.cisco.com https://*.webexcontent.com https://*.giphy.com https://*.clouddrive.com/' ]
+            'https://myspark.cisco.com https://*.webexcontent.com https://*.giphy.com https://*.clouddrive.com/ ' +
+            'https://idbroker.webex.com' ]
     }
 } ) )
 

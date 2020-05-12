@@ -38,6 +38,8 @@ Included samples:
 
 1. Create a Webex Teams 'integration' type application: https://developer.webex.com/my-apps
 
+    * Select the `spark:all` scope
+
     * Specify three **Redirect URI**s:
 
         ```bash

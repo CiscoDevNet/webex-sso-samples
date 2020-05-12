@@ -129,3 +129,5 @@ Included samples:
     ```bash
     browserify browserify/browser_sdk.js > public/javascripts/browser_sdk.js
     ```
+
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/CiscoDevNet/webex-teams-sso-samples)

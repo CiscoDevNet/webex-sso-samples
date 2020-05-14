@@ -120,7 +120,7 @@ Included samples:
 
 1. **Bundling the Webex SDK with Browserify** - The source file `browserify/browser_sdk.js` is a 'pre-bundled' file.  In order to efficiently bundle the Webex Teams Browser SDK into the file, this project uses [Browserify](http://browserify.org/).  After bundling, the complete and ready-to-go file is placed in `public/javascripts/browser_sdk.js` where it can be statically served.  
 
-    This only needs to happen once, sometime before the project is run the first time, **unless** either the Webex Browser SDK package in the projected is updated (e.g. via `npm update`), or the source file `browserify/browser_sdk.js` is modified.
+    This only needs to happen once, sometime before the project is run the first time, **unless** either the Webex Browser SDK package in the project is updated (e.g. via `npm update`), or the source file `browserify/browser_sdk.js` is modified.
 
     Running the project via the VS Code **Run** tab launcher or via **F5** with the **Build & launch SSO samples** option selected automatically calls a pre-debug task that executes the browserify command each time you run.  You can avoid this browserify step by selecting the **Launch (only) SSO samples** option instead.
 

@@ -6,7 +6,7 @@
         {
             "label": "Browserify browser_sdk.js",
             "type": "shell",
-            "command": "browserify browserify/browser_sdk.js > public/javascripts/browser_sdk.js"
+            "command": "npx browserify browserify/browser_sdk.js > public/javascripts/browser_sdk.js"
         }
     ]
 }

@@ -116,7 +116,7 @@ Included samples:
 
 ## Hints
 
-1. **OAuth white-listing** - Organizations (e.g. Cisco IT) can enforce a whitelist for Webex Teams OAuth integrations - you may need to create a separate Webex Teams account with a non-organization email in order to create / test your integration
+1. **OAuth white-listing** - Organizations (e.g. Cisco IT) can enforce a whitelist for Webex Teams OAuth integrations - you may need to create a separate Webex Teams account with a non-organization email in order to develop / test your integration, and work with your Webex management team to whitelist your app for production.
 
 1. **Bundling the Webex SDK with Browserify** - The source file `browserify/browser_sdk.js` is a 'pre-bundled' file.  In order to efficiently bundle the Webex Teams Browser SDK into the file, this project uses [Browserify](http://browserify.org/).  After bundling, the complete and ready-to-go file is placed in `public/javascripts/browser_sdk.js` where it can be statically served.  
 

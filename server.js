@@ -36,6 +36,7 @@ app.use( session( { secret: uuidv4() } ) );
 // Implement Content Security Policy (CSP) directives supported by Widgets
 app.use( csp( {
     directives: {
+        defaultSrc: [ `'self` ],
         scriptSrc: [ `'self' 'unsafe-inline' code.s4d.io` ],
         styleSrc: [ `'self' 'unsafe-inline' code.s4d.io` ],
         mediaSrc: [ `'self' code.s4d.io *.giphy.com *.clouddrive.com *.webexcontent.com data: blob:` ],

@@ -41,7 +41,7 @@ app.use( csp( {
         styleSrc: [ `'self' 'unsafe-inline' code.s4d.io` ],
         mediaSrc: [ `'self' code.s4d.io *.giphy.com *.clouddrive.com *.webexcontent.com data: blob:` ],
         fontSrc: [ `'self' code.s4d.io` ],
-        imgSrc: [ `'self' code.s4d.io *.clouddrive.com data: blob: *.rackcdn.com` ],
+        imgSrc: [ `'self' code.s4d.io *.clouddrive.com data: blob: *.rackcdn.com *.webexcontent.com` ],
         connectSrc: [ `'self' localhost wss://*.wbx2.com https://*.wbx2.com wss://*.wbx.com https://*.webex.com ` +
             'https://code.s4d.io https://*.code.s4d.io wss://*.ciscospark.com https://*.ciscospark.com ' +
             'https://myspark.cisco.com https://*.webexcontent.com https://*.giphy.com https://*.clouddrive.com/ ' +

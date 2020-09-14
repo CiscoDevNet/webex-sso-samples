@@ -10,15 +10,17 @@
             "name": "Build & launch SSO samples",
             "program": "${workspaceFolder}/server.js",
             "preLaunchTask": "Browserify browser_sdk.js",
+            "outputCapture": "std",
             "env": {
-                "NODE_ENV": "development",
-                "DEBUG": "oauth*"
+                // "NODE_ENV": "development",
+                // "DEBUG": "oauth*"
             }
         },        {
             "type": "node",
             "request": "launch",
             "name": "Launch (only) SSO samples",
             "program": "${workspaceFolder}/server.js",
+            "outputCapture": "std",
             "env": {
                 "NODE_ENV": "development",
                 "DEBUG": "oauth*"

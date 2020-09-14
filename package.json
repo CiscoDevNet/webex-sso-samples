@@ -6,19 +6,17 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "browserify": "^16.5.2",
     "cookie-parser": "^1.4.5",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
-    "ejs": "^3.1.3",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "helmet-csp": "^3.0.0",
+    "helmet-csp": "^3.1.0",
     "http-errors": "^1.8.0",
     "morgan": "^1.10.0",
-    "node-fetch": "^2.6.0",
-    "url": "^0.11.0",
+    "node-fetch": "^2.6.1",
     "uuid": "^8.3.0",
-    "webex": "^1.85.0"
+    "webex": "^1.93.1"
   }
 }

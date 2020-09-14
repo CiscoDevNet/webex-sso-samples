@@ -19,7 +19,6 @@ const session = require( 'express-session' );
 const https = require('https')
 const ejs = require( 'ejs' );
 const { v4: uuidv4 } = require( 'uuid' );
-const { URLSearchParams } = require('url');
 const fs = require( 'fs' )
 const csp = require( 'helmet-csp' );
 const join = require( 'path' ).join;
@@ -30,8 +29,12 @@ require('dotenv').config();
 // Create the Express app object
 const app = express();
 
-// Initialize Expression session storage with a unique secret
-app.use( session( { secret: uuidv4() } ) );
+// Initialize Express session storage with a unique secret
+app.use( session( { 
+    secret: uuidv4(),
+    resave: false,
+    saveUninitialized: false
+} ) );
 
 // Implement Content Security Policy (CSP) directives supported by Widgets
 app.use( csp( {
@@ -453,6 +456,6 @@ https.createServer( {
   app
 )
 .listen( process.env.PORT, function () {
-    debug( `Webex Teams OAuth integration started on port: ${ process.env.PORT }` );
+    debug( `Webex Teams OAuth integration started on https://localhost:${ process.env.PORT }` );
 } )
 

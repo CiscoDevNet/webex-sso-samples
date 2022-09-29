@@ -1,4 +1,4 @@
-# webex-teams-sso-samples
+# webex-sso-samples
 
 Server-side (Node.JS) and client-side sample apps demonstrating OAuth2 with Webex REST APIs.
 
@@ -60,13 +60,13 @@ Included samples:
 1. From a terminal window, use `git` to clone this repo:
 
     ```bash
-    git clone https://github.com/CiscoDevNet/webex-teams-sso-samples.git
+    git clone https://github.com/CiscoDevNet/webex-sso-samples.git
     ```
 
 1. Change into the repo directory, and install dependencies with `npm`:
 
     ```bash
-    cd webex-teams-sso-samples
+    cd webex-sso-samples
     npm install
     ```
 

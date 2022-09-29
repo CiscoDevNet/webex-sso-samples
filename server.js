@@ -13,7 +13,8 @@
 
 const debug = require( 'debug' )( 'oauth' );
 const fine = require( 'debug' )( 'oauth:fine' );
-const fetch = require( 'node-fetch' );
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args));
 const express = require( 'express' );
 const session = require( 'express-session' );
 const https = require('https')
@@ -53,8 +54,8 @@ app.use( csp( {
 } ) )
 
 // Create a Webex Teams integration from https://developer.webex.com/my-apps
-// Make sure to create two redirect URLs, one for server-side, one for client-side
-// Enter your integration details in .env
+// Make sure to create three redirect URLs, one for server-side, one for client-side,
+// one for Browser.  Enter your integration details in .env
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 const redirectUriServer = process.env.REDIRECT_URI_SERVER; // e.g. https://localhost:3000/oauth_server

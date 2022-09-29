@@ -3,20 +3,22 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "NODE_ENV=development DEBUG=* node server.js",
+    "build": "browserify -o public/javascripts/browser_sdk.js browserify/browser_sdk.js"
   },
   "dependencies": {
-    "cookie-parser": "^1.4.5",
-    "debug": "^4.1.1",
-    "dotenv": "^8.2.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "helmet-csp": "^3.1.0",
-    "http-errors": "^1.8.0",
+    "browserify": "^16.5.1",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "helmet-csp": "^3.4.0",
+    "http-errors": "^2.0.0",
     "morgan": "^1.10.0",
-    "node-fetch": "^2.6.1",
-    "uuid": "^8.3.0",
-    "webex": "^1.93.1"
+    "node-fetch": "^3.2.10",
+    "uuid": "^9.0.0",
+    "webex": "^2.24.1"
   }
 }

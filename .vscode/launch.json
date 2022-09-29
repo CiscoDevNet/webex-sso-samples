@@ -5,25 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Build",
+            "request": "launch",
+            "type": "node",
+            "runtimeArgs": [
+                "run-script",
+                "build"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Launch",
             "type": "node",
             "request": "launch",
-            "name": "Build & launch SSO samples",
-            "program": "${workspaceFolder}/server.js",
-            "preLaunchTask": "Browserify browser_sdk.js",
-            "outputCapture": "std",
-            "env": {
-                // "NODE_ENV": "development",
-                // "DEBUG": "oauth*"
-            }
-        },        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch (only) SSO samples",
             "program": "${workspaceFolder}/server.js",
             "outputCapture": "std",
             "env": {
                 "NODE_ENV": "development",
-                "DEBUG": "oauth*"
+                "DEBUG": "*"
             }
         }
     ]
